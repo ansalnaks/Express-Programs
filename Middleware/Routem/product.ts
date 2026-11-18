@@ -8,6 +8,7 @@ function checkUser(req: Request, res: Response, next: NextFunction) {
 }
 
 router.use(checkUser)
+
 router.get("/profile", (req: Request, res: Response) => {
     res.send("Profile Page");
 });

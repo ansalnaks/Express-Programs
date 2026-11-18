@@ -2,16 +2,14 @@ import type { Request, Response } from "express";
 import { movies } from "../models/movieModel.js";
 import type{Movie} from "../types/movie.js"
 
+
+
+
+
 // Get All Movies
 export const getMovies = (req: Request, res: Response) => {
     res.status(200).json(movies);
 };
-
-
-
-
-
-
 
 // Get Movie By ID
 export const getMovieById = (req: Request, res: Response) => {
@@ -42,8 +40,6 @@ export const addMovie = (req: Request, res: Response) => {
         movie: newMovie
     });
 };
-
-
 
 // Update Movie
 export const updateMovie = (req: Request, res: Response) => {

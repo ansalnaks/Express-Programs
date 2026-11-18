@@ -6,9 +6,9 @@ const router = Router();
 router.get("/movies", getMovies);
 
 router.post("/movies", addMovie);
-
-
 router.put("/movies/:id", updateMovie);
+
+
 router.delete("/movies/:id", deleteMovie)
 router.get("/movies/highrated", getHighRatedMovies);
 router.get("/movies/search", searchMovie);

@@ -3,7 +3,7 @@ import express, { type Application,type NextFunction,type Request,type Response 
 const app:Application = express();
 
 app.use((req:Request, res:Response, next:NextFunction) => {
-    console.log("Application Middleware");
+    console.log("Application Middleware: Request Received");
     next();
 });
 

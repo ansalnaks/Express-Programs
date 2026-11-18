@@ -1,6 +1,5 @@
 // Third-party middleware is middleware created by other developers or organizations.Need to install it, using npm.
 
-
 // Cors
 
 // It allows a frontend and backend running on different origins (different domain, port, or protocol) to communicate.

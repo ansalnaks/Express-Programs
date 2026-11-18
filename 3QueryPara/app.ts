@@ -1,6 +1,6 @@
-import express from "express";
+import express, { type Application } from "express";
 
-const app = express();
+const app:Application = express();
 
 const products = [
     { id: 1, name: "iPhone 16", category: "mobile", price: 90000 },

@@ -15,8 +15,11 @@ app.patch("/stu", (req:Request, res:Response) => {
     if(req.body.name){
         student.name = req.body.name;
     }
+    if(req.body.age){
+        student.age = req.body.age;
+    }
 
-    res.json(student);
+    res.status(200).json({"message": "student updated", student});
 
 });
 

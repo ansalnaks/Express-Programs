@@ -1,8 +1,8 @@
-import express from "express" ;
+import express, { type Application,type Request,type Response } from "express" ;
 
-const app = express();
+const app:Application = express();
  //npm install express
-app.post("/student", (req, res) => {
+app.post("/student", (req:Request, res:Response) => {
     res.send("Welcome Home page");
 });
 

@@ -1,4 +1,4 @@
-import express, { type Application } from "express";
+import express, { type Application,type Request,type Response } from "express";
 
 const app:Application = express();
 
@@ -6,7 +6,7 @@ app.use(express.json());
 
 let students: any[] = [];
 
-app.post("/student", (req, res) => {
+app.post("/student", (req:Request, res:Response) => {
 
     students.push(req.body);
 
@@ -16,20 +16,7 @@ app.post("/student", (req, res) => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-app.get("/student",(req,res)=>{
+app.get("/student",(req:Request,res:Response)=>{
     res.json({"message":"fetched",students})
 })
 

@@ -49,7 +49,8 @@ app.post("/register", async (req: Request, res: Response) => {
         user: {
             id: newUser.id,
             name: newUser.name,
-            email: newUser.email
+            email: newUser.email,
+             password: newUser.password
         }
     });
 

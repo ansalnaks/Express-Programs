@@ -1,4 +1,4 @@
-import express, { type Application } from "express";
+import express, { type Application,type Request,type Response} from "express";
 
 const app:Application = express();
 
@@ -8,8 +8,8 @@ const students = [
     "Akhil"
 ];
 
-app.get("/student", (req, res) => {
-    res.status(200).json(students);
+app.get("/student", (req:Request, res:Response) => {
+    res.status(200).json({"message": "get students",  students});
 });
 
 const port:number=6000

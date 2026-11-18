@@ -13,7 +13,7 @@ app.put("/student/1", (req:Request, res:Response) => {
 
     student = req.body;
 
-    res.json(student);
+    res.json({"message": "student updated", student});
 
 });
 app.listen(6000);
